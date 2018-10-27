@@ -109,6 +109,7 @@ void yyerror(char *s) {
     extern int yylineno;
     fprintf(stdout, "%s\nLine No: %d\nAt char: %c\n", s, yylineno,*yytext);
 }
+//main function
 int main(void) {
     yyparse();
     return 0;
